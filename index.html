@@ -71,6 +71,18 @@
     <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
     <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
+    <!-- Twitter cards -->
+	<meta name="twitter:card" content="product">
+	<meta name="twitter:site" content="@publisher_handle">
+	<meta name="twitter:title" content="Page Title">
+	<meta name="twitter:description" content="Page description less than 200 characters">
+	<meta name="twitter:creator" content="@author_handle">
+	<meta name="twitter:image" content="http://www.example.com/image.html">
+	<meta name="twitter:data1" content="$3">
+	<meta name="twitter:label1" content="Price">
+	<meta name="twitter:data2" content="Black">
+	<meta name="twitter:label2" content="Color">
+
     <!-- Android -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#123456">
@@ -83,10 +95,10 @@
 	</script>
 	
 	<script type="text/javascript">
+		var _gaqID = 'UA-XXXXXXXX-1'; // Eidt this
 		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+		_gaq.push(['_setAccount', _gaqID]);
 		_gaq.push(['_trackPageview']);
-
 		(function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
